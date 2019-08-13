@@ -4,13 +4,14 @@ import { NgModule } from '@angular/core';
 // Services
 import { GuideService } from './services/guide.service';
 
-// COmponents
+// Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { EditGuideComponent } from './pages/edit-guide/edit-guide.component';
 import { NewGuideComponent } from './pages/new-guide/new-guide.component';
 import { ShowGuideComponent } from './pages/show-guide/show-guide.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ShowGuideComponent } from './pages/show-guide/show-guide.component';
     ShowGuideComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     GuideService

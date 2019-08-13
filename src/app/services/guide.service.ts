@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Guide } from '../classes/guide';
 import { IMaterial } from '../interfaces/material';
-import GuideData from '../../data.json';  // Ignore this error, its works anyway!
+import * as GuideData from '../../data.json';
 import * as _ from 'lodash';
 
 
