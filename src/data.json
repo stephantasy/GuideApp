@@ -1,0 +1,77 @@
+{
+    "guide": [
+        {
+            "id": 1,
+            "title": "Photograph a turtle",
+            "description": "How to make a good picture of a marine turtle",
+            "team": "2",
+            "imageUrl": "assets/Turtle.jpg",
+            "materials": [
+                {
+                    "type": "Camera",
+                    "amount": 1
+                },
+                {
+                    "type": "Diving equipment",
+                    "amount": 1
+                }
+            ],
+            "instruction":[
+                "Equip your suit",
+                "dive in water",
+                "wait for a turtle to arrive",
+                "Take a picture!"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Lost in forest?",
+            "description": "How to find your path in the wood",
+            "team": "1",
+            "imageUrl": "assets/Compass.jpg",
+            "materials": [
+                {
+                    "type": "Smartphone",
+                    "amount": 1
+                },
+                {
+                    "type": "Bottle of water",
+                    "amount": 2
+                }
+            ],
+            "instruction":[
+                "Put on your phone",
+                "Launch your GPS app",
+                "Set a point to reach",
+                "Follow indications!"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Build a computer",
+            "description": "Want to build your how computer, really?",
+            "team": "99",
+            "imageUrl": "assets/Computer.jpg",
+            "materials": [
+                {
+                    "type": "Lots of electronic stuff",
+                    "amount": 99
+                },
+                {
+                    "type": "Tools",
+                    "amount": 34
+                },
+                {
+                    "type": "Books",
+                    "amount": 25
+                }
+            ],
+            "instruction":[
+                "Read all books on electronics, magnetism and so on",
+                "Buy all electonic stuff",
+                "...",
+                "Seriously, don't you want to achieve something else?"
+            ]
+        }
+    ]
+}
