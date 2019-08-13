@@ -8,11 +8,11 @@
             "imageUrl": "assets/Turtle.jpg",
             "materials": [
                 {
-                    "type": "Camera",
+                    "name": "Camera",
                     "amount": 1
                 },
                 {
-                    "type": "Diving equipment",
+                    "name": "Diving equipment",
                     "amount": 1
                 }
             ],
@@ -31,11 +31,11 @@
             "imageUrl": "assets/Compass.jpg",
             "materials": [
                 {
-                    "type": "Smartphone",
+                    "name": "Smartphone",
                     "amount": 1
                 },
                 {
-                    "type": "Bottle of water",
+                    "name": "Bottle of water",
                     "amount": 2
                 }
             ],
@@ -54,15 +54,15 @@
             "imageUrl": "assets/Computer.jpg",
             "materials": [
                 {
-                    "type": "Lots of electronic stuff",
+                    "name": "Lots of electronic stuff",
                     "amount": 99
                 },
                 {
-                    "type": "Tools",
+                    "name": "Tools",
                     "amount": 34
                 },
                 {
-                    "type": "Books",
+                    "name": "Books",
                     "amount": 25
                 }
             ],
