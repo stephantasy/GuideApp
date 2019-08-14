@@ -29,7 +29,7 @@ export class GuideService {
   }
 
 
-  public getGuide(id: number): Guide{
+  public getGuideById(id: number): Guide{
     return _.find(this.guides, (guide) => guide.id ===id);
   }
 
