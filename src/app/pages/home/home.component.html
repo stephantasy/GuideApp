@@ -1,1 +1,30 @@
-<p>home works!</p>
+<app-navbar></app-navbar>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Guides & more</h1>
+        <div class="d-flex justify-content-center">
+            <p class="lead w-50">
+                A collection of wonderfull guides and more!
+            </p>
+        </div>
+        <p>
+            <a routerLink="/guide/new" class="btn btn-primary">Add New Guide</a>
+        </p>
+    </div>
+</section>
+<section class="container">
+    <div class="row">
+        <ng-container *ngFor="let guide of guideService.getGuides()">
+            <div class="col d-flex justify-content-center">
+                <div class="card">
+                    <img [src]="guide.imageUrl" alt="{{guide.title}}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{guide.title}}</h5>
+                        <p class="card-text">{{guide.description}}</p>
+                        <a routerLink="/guide/{{guide.id}}" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>        
+    </div>
+</section>

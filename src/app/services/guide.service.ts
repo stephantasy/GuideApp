@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Guide } from '../classes/guide';
 import { IMaterial } from '../interfaces/material';
+import { Guide } from '../classes/guide';
 import * as GuideData from '../../data.json';
 import * as _ from 'lodash';
 
@@ -10,21 +10,29 @@ import * as _ from 'lodash';
 })
 export class GuideService {
 
-private guides: Guide[] = [];
+  private guides: Guide[] = [];
 
   constructor() {
-    (<any>GuideData).guides.foreach( guide => {
-      this.guides.push( new Guide(guide) );
+    // For a reason I don't know, this does not work...
+    // (<any>GuideData).guides.foreach( guide => {
+    //   this.guides.push( new Guide(guide) );
+    // });
+    
+    Array.prototype.forEach.call(GuideData.guides, guide => {
+      this.guides.push(guide);
     })
   }
+
 
   public getGuides(): Guide[]{
     return this.guides;
   }
 
+
   public getGuide(id: number): Guide{
     return _.find(this.guides, (guide) => guide.id ===id);
   }
+
 
   public createGuide(
       title: string,
@@ -49,11 +57,13 @@ private guides: Guide[] = [];
       return newGuide;
   }
 
+
   public updateGuide(guide: Guide): Guide {
     const guideIndex = _.findIndex(this.guides, (g) => g.id === guide.id);
     this.guides[guideIndex] = guide;
     return guide;
   }
+
 
   public deleteGuide(id: number) : void{
     let guideIndex = _.findIndex(this.guides, (g) => g.id === id);
