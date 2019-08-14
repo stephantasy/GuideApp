@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Services
 import { GuideService } from './services/guide.service';
@@ -11,7 +13,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { EditGuideComponent } from './pages/edit-guide/edit-guide.component';
 import { NewGuideComponent } from './pages/new-guide/new-guide.component';
 import { ShowGuideComponent } from './pages/show-guide/show-guide.component';
-import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     GuideService
