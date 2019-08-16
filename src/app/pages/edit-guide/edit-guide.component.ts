@@ -82,13 +82,13 @@ export class EditGuideComponent implements OnInit, OnDestroy {
     this.instructions.push(this.createInstruction(''));
   }
 
-  addMaterial(): void {
-    this.materials.push(this.createMaterial('', ''));
-  }
-
   deleteInstruction(index: number): void {
     const arrayControl = this.guideForm.controls['instructions'] as FormArray;
     arrayControl.removeAt(index);
+  }
+
+  addMaterial(): void {
+    this.materials.push(this.createMaterial('', ''));
   }
 
   deleteMaterial(index: number): void {
