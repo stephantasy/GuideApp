@@ -115,7 +115,7 @@ export class EditGuideComponent implements OnInit, OnDestroy {
         )
       );
       console.log("Form saved");
-      this.router.navigate(['/guide/${this.guide.id}']);
+      this.router.navigate([`/guide/${this.guide.id}`]);
     } else {
       // else show an alert
       console.log("Form Error");
